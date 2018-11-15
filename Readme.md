@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* **[ChangeColumnTemplateController.cs](./CS/WebExample.Module.Web/ChangeColumnTemplateController.cs) (VB: [ChangeColumnTemplateController.vb](./VB/WebExample.Module.Web/ChangeColumnTemplateController.vb))**
+<!-- default file list end -->
 # How to use custom ASPxGridView template in a Web XAF application
 
 
