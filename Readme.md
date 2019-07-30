@@ -5,7 +5,7 @@
 <!-- default file list end -->
 # How to use custom ASPxGridView template in a Web XAF application
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e1671)**
+**[[Run Online]](https://codecentral.devexpress.com/e1671/)**
 <!-- run online end -->
 
 
