@@ -10,7 +10,7 @@ Imports DevExpress.ExpressApp.Web
 Imports DevExpress.ExpressApp.Web.TestScripts
 Imports DevExpress.ExpressApp.Xpo
 Imports DevExpress.Persistent.AuditTrail
-Imports DevExpress.Web.ASPxClasses
+Imports DevExpress.Web
 
 Namespace WebExample.Web
 	Public Class [Global]
@@ -19,7 +19,8 @@ Namespace WebExample.Web
 			InitializeComponent()
 		End Sub
 		Protected Sub Application_Start(ByVal sender As Object, ByVal e As EventArgs)
-			RenderHelper.RenderMode = DevExpress.Web.ASPxClasses.ControlRenderMode.Lightweight
+			            DevExpress.ExpressApp.FrameworkSettings.DefaultSettingsCompatibilityMode = DevExpress.ExpressApp.FrameworkSettingsCompatibilityMode.v20_1
+RenderHelper.RenderMode = DevExpress.Web.ControlRenderMode.Lightweight
 			AddHandler ASPxWebControl.CallbackError, AddressOf Application_Error
 #If DEBUG Then
 			TestScriptsManager.EasyTestEnabled = True

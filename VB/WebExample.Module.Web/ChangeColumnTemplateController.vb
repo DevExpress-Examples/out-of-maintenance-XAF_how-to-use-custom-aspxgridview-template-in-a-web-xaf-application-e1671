@@ -10,9 +10,8 @@ Imports System.Web.UI.WebControls
 Imports DevExpress.Xpo
 Imports DevExpress.ExpressApp
 Imports DevExpress.ExpressApp.Web.Editors.ASPx
-Imports DevExpress.Web.ASPxGridView
+Imports DevExpress.Web
 Imports DevExpress.ExpressApp.Web
-Imports DevExpress.Web.ASPxEditors
 Imports System.Collections
 Imports DevExpress.ExpressApp.Web.Editors
 

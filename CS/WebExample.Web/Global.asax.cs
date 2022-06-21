@@ -9,7 +9,7 @@ using DevExpress.ExpressApp.Web;
 using DevExpress.ExpressApp.Web.TestScripts;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.Persistent.AuditTrail;
-using DevExpress.Web.ASPxClasses;
+using DevExpress.Web;
 
 namespace WebExample.Web {
     public class Global : System.Web.HttpApplication {
@@ -17,7 +17,8 @@ namespace WebExample.Web {
             InitializeComponent();
         }
         protected void Application_Start(object sender, EventArgs e) {
-            RenderHelper.RenderMode = DevExpress.Web.ASPxClasses.ControlRenderMode.Lightweight;
+            DevExpress.ExpressApp.FrameworkSettings.DefaultSettingsCompatibilityMode = DevExpress.ExpressApp.FrameworkSettingsCompatibilityMode.v20_1;
+            RenderHelper.RenderMode = DevExpress.Web.ControlRenderMode.Lightweight;
             ASPxWebControl.CallbackError += new EventHandler(Application_Error);
 #if DEBUG
             TestScriptsManager.EasyTestEnabled = true;
